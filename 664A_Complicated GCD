@@ -1,0 +1,16 @@
+/*
+1.a==b — the segment consists of a single number, hence the answer is a.
+2.a<b — we have gcd(a,a+1,a+2,...,b)=gcd(gcd(a,a+1),a+2,...,b) =gcd(1,a +2,...,b)=1.
+*/
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	//freopen("in.txt","r",stdin);
+	//freopen("out.txt","w",stdout);
+	char a[104],b[104];
+	scanf("%s%s",a,b);
+	if(strcmp(a,b)==0)puts(a);
+	else printf("1\n");
+	return 0;
+}
